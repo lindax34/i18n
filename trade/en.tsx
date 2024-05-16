@@ -1,5 +1,4 @@
 const en = {
-  
   language: 'en-US',
   'kline.time_Line': 'Time',
   'kline.time_1m': '1m',
