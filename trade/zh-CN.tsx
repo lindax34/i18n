@@ -828,10 +828,6 @@ const zhCN = {
   'mining.my_th_mining_status': '挖矿状态',
   'mining.status_framing': '正在挖矿',
   'mining.status_over_price': '已超出价格区间',
-  'mining.status_over_price_tips':
-    '订单簿奖励价格范围（最高买单价格*0.99 ~ 最低卖单价格*1.01）已离开该网格策略的价格区间',
-  'mining.status_over_price_tips_stable':
-    '订单簿奖励价格范围（最高买单价格 ~ 最低卖单价格）已离开该网格策略的价格区间',
   'mining.status_mining_over': '挖矿已结束',
   'mining.status_grid_closed': '策略已关闭',
   'mining.status_grid_expired': '策略已过期',
@@ -845,17 +841,7 @@ const zhCN = {
   'mining.mining_unavailable': '不满足',
   'mining.mining_partially_available': '部分满足',
   'mining.mining_unavailable_tips': '未满足订单价值要求',
-  'mining.mining_criteria': '网格订单同时满足以下条件时可获得挖矿奖励',
-  'mining.funding_criteria': '订单价值要求',
-  'mining.price_criteria': '订单价格要求',
-  'mining.price_criteria_tips':
-    '网格订单价格必须在奖励价格范围之内，即订单簿最高买入价格*0.99 ～ 订单簿最低卖出价格*1.01。',
-  'mining.price_criteria_tips_stable':
-    '网格策略运行时，网格订单价格需位于此时的奖励价格范围(订单簿最高买单价格 ~ 最低卖单价格)内',
   'mining.mining_preview': '挖矿预览',
-  'mining.mining_tips_BV_BASE_QV_QUOTE':
-    '创建策略时，网格订单需要BV BASE或QV QUOTE。',
-  'mining.mining_tips_QV_QUOTE': '创建策略时，网格订单需要QV QUOTE。',
   'mining.mining_total_profit': '挖矿收益',
   'mining.mining_24h_profit': '24小时挖矿收益',
   'mining.profit_unable_display': '无法显示',
@@ -870,11 +856,6 @@ const zhCN = {
     '该订单价格位于订单簿奖励价格范围内（最高买单价格*0.99 ~ 最低卖单价格*1.01），因此获得挖矿奖励。',
   'mining.th_rewards_origin_tips_stable':
     '该订单价格位于订单簿奖励价格范围内（最高买单价格 ~ 最低卖单价格），因此获得挖矿奖励。',
-  'mining.th_rewards_price_range': '奖励价格范围',
-  'mining.th_rewards_price_range_tips_stable':
-    '下单时满足挖矿条件的网格订单，如果位于订单簿奖励价格范围内（最高买单价格 ~ 最低卖单价格），则能得到挖矿奖励。',
-  'mining.th_rewards_price_range_tips':
-    '下单时满足挖矿条件的网格订单，如果位于订单簿奖励价格范围内（最高买单价格*0.99 ~ 最低卖单价格*1.01），则能得到挖矿奖励。',
   'mining.th_time': '时间',
   'mining.plan_title': 'ETH/USDC 矿池详情',
   'mining.phase_cur': '当前阶段',
@@ -888,7 +869,6 @@ const zhCN = {
   'mining.locker_rewards_tips': '网格策略运行满12小时后可领取挖矿奖励',
   'mining.claimed_success': '领取奖励成功',
   'mining.claimed_tips': '稍后您将通过内部转账收到款项',
-  'mining.view_history': '查看内部转账历史',
   'mining.claimed_view_btn': '查看',
   'mining.mining_plan': '矿池计划',
   'mining.phase_unpublished': '待公布',
@@ -1225,6 +1205,44 @@ const zhCN = {
   top_losers_24h: '24小时跌幅',
   listed_tokens: '上架币种',
   vol: '成交量',
+
+  let_s_go: '出发',
+  reject: '拒绝',
+  maximum_N_due_to_price_ticks: '由于价格精度限制，最大值为N',
+  Saved: '已保存',
+  minimum_order_value_$100_$QUOTE: '最小订单价值为<b>$100 $QUOTE</b>',
+  minimum_order_value_$AMOUNT_$QUOTE_$100:
+    '最小订单价值为<b> $AMOUNT $QUOTE</>(~$$100)',
+  no_restriction_with_market_order: '<b>市价单</b>没有该限制',
+  go_to_market_order: '去下市价单',
+  Mining_Eligibility: '挖矿资格',
+  How_to_earn_mining_rewards: ' 如何获取挖矿奖励',
+  Order_Value: '订单价值',
+  'mining.mining_tips_BV_BASE_QV_QUOTE':
+    '在策略创建时，网格订单至少为<b>BV BASE</b> 或者 <b>QV QUOTE</b>',
+  'mining.mining_tips_QV_QUOTE': '在策略创建时，网格订单至少为<b>QV QUOTE</b>',
+  Mining_Price_Range: '挖矿价格范围',
+  'mining.status_over_price_tips':
+    '网格订单价格必须在<b>挖矿价格范围之内</b>，即：订单簿最高买入价格*0.99 ～ 订单簿最低卖出价格*1.01。',
+  'mining.status_over_price_tips_stable':
+    '网格订单价格必须在<b>挖矿价格范围之内</b>，即：订单簿最高买入价格 ～ 订单簿最低卖出价格。',
+  Eligible_for_Mining: '可以挖矿',
+  Mining_Satus: '挖矿状态',
+  Mining_Satus_Mining: '正在挖矿',
+  Mining_Satus_Standby: '等待中',
+  Mining_Satus_Ineligible: '不符合要求',
+  mining_price_range: '挖矿奖励范围',
+  rewards_tips_stable:
+    '策略创建时满足挖矿订单价值的网格订单，如果其价格在挖矿价格范围之内可以获得挖矿奖励（最高买单价格 ~ 最低卖单价格）',
+  rewards_tips:
+    '策略创建时满足挖矿订单价值的网格订单，如果其价格在挖矿价格范围之内可以获得挖矿奖励（最高买单价格*0.99 ~ 最低卖单价格*1.01）',
+  wrap: '跨链',
+  Wrap: '跨链',
+  websites_for_more_information: '获取更多信息：',
+  official_site: '官方网站',
+  wrap_site: '跨链网站',
+  tips_third_party_site: '你即将离开DeGate并访问第三方站点：',
+  wrap_unwrap: '跨链兑换',
 };
 
 export default zhCN;
