@@ -878,10 +878,6 @@ const en = {
   'mining.my_th_mining_status': 'Mining Status',
   'mining.status_framing': 'Active',
   'mining.status_over_price': 'Out of Price Range',
-  'mining.status_over_price_tips':
-    'This grid strategy is outside of the order book reward price range (highest buy price * 0.99 - lowest sell price *1.01)',
-  'mining.status_over_price_tips_stable':
-    'This grid strategy is outside of the order book reward price range (highest buy price - lowest sell price)',
   'mining.status_mining_over': 'Mining Ended',
   'mining.status_grid_closed': 'Strategy Ended',
   'mining.status_grid_expired': 'Strategy Expired',
@@ -895,19 +891,7 @@ const en = {
   'mining.mining_unavailable': 'Ineligible',
   'mining.mining_partially_available': 'Partially Eligible',
   'mining.mining_unavailable_tips': 'Order value criteria not fulfilled',
-  'mining.mining_criteria':
-    'Grid orders that meet both the following criteria can receive mining rewards.',
-  'mining.funding_criteria': 'Order Value Criteria',
-  'mining.price_criteria': 'Order Price Criteria',
-  'mining.price_criteria_tips':
-    'Grid order price must fall within the reward price range, defined as (highest order book buy price * 0.99 - lowest order book sell price *1.01).',
-  'mining.price_criteria_tips_stable':
-    'Grid order price must fall within the reward price range (highest order book buy price - lowest order book sell price) for the running grid strategy.',
   'mining.mining_preview': 'Mining Preview',
-  'mining.mining_tips_BV_BASE_QV_QUOTE':
-    'Grid orders must be greater than BV BASE or QV QUOTE at time of strategy creation.',
-  'mining.mining_tips_QV_QUOTE':
-    'Grid orders must be greater than QV QUOTE at time of strategy creation.',
   'mining.mining_total_profit': 'Mining Rewards',
   'mining.mining_24h_profit': '24h Mining Rewards',
   'mining.profit_unable_display': 'N/A',
@@ -922,11 +906,6 @@ const en = {
     'Mining reward is received as the grid order price is within the reward price range of the order book (highest buy price * 0.99 ~ lowest sell price *1.01).',
   'mining.th_rewards_origin_tips_stable':
     'Mining reward is received as the grid order price is within the reward price range of the order book (highest buy price ~ lowest sell price).',
-  'mining.th_rewards_price_range': 'Reward Price Range',
-  'mining.th_rewards_price_range_tips_stable':
-    'Grid Orders that fulfil the mining criteria during order placement will receive mining rewards if they fall within the reward price range (highest buy price ~ lowest sell price).',
-  'mining.th_rewards_price_range_tips':
-    'Grid Orders that fulfil the mining criteria during order placement will receive mining rewards if they fall within the reward price range (highest buy price * 0.99 ~ lowest sell price *1.01).',
   'mining.th_time': 'Time',
   'mining.plan_title': 'ETH/USDC Pool Details',
   'mining.phase_cur': 'Current Phase',
@@ -941,7 +920,6 @@ const en = {
     'Mining rewards can only be claimed after the Grid Strategy has been active for 12 hours.',
   'mining.claimed_success': 'Claim Successful',
   'mining.claimed_tips': 'Will be sent to you shortly via internal transfer',
-  'mining.view_history': 'View Internal Transfer History',
   'mining.claimed_view_btn': 'Go Check',
   'mining.mining_plan': 'Mining Schedule',
   'mining.phase_unpublished': 'To be announced',
@@ -1308,6 +1286,46 @@ const en = {
   top_losers_24h: '24h Top Losers',
   listed_tokens: 'Listed Tokens',
   vol: 'Vol',
+
+  let_s_go: 'Let’s Go',
+  reject: 'Reject',
+  maximum_N_due_to_price_ticks: 'Maximum N due to price ticks',
+  Saved: 'Saved',
+  minimum_order_value_$100_$QUOTE: 'Minimum order value is <b>$100 $QUOTE</b>',
+  minimum_order_value_$AMOUNT_$QUOTE_$100:
+    'Minimum order value is <b>$AMOUNT $QUOTE</b>(~$$100)',
+  no_restriction_with_market_order: 'No restriction with <b>market order</b>',
+  go_to_market_order: 'Go to Market Order',
+  Mining_Eligibility: 'Mining Eligibility',
+  How_to_earn_mining_rewards: 'How to earn mining rewards',
+  Order_Value: 'ORDER VALUE',
+  'mining.mining_tips_BV_BASE_QV_QUOTE':
+    'Grid orders must be at least <b>BV BASE</b> or <b>QV QUOTE</b> at the time of strategy creation.',
+  'mining.mining_tips_QV_QUOTE':
+    'Grid orders must be at least <b>QV QUOTE</b> at the time of strategy creation.',
+  Mining_Price_Range: 'MINING PRICE RANGE',
+  'mining.status_over_price_tips':
+    'Grid order prices must fall within the <b>mining price range</b>, which is from the highest buy price * 0.99 to the lowest sell price *1.01 in the order book.',
+  'mining.status_over_price_tips_stable':
+    'Grid order prices must fall within the <b>mining price range</b>, which is from the highest buy price to the lowest sell price in the order book.',
+  Eligible_for_Mining: 'Eligible for Mining',
+  Mining_Satus: 'Mining Satus',
+  Mining_Satus_Mining: 'Mining',
+  Mining_Satus_Standby: 'Standby',
+  Mining_Satus_Ineligible: 'Ineligible',
+  mining_price_range: 'Mining Price Range',
+  rewards_tips_stable:
+    'Grid orders that fulfill the criterion of mining order value at strategy creation will receive mining rewards if they fall within the mining price range (highest buy price ~ lowest sell price).',
+  rewards_tips:
+    'Grid orders that fulfill the criterion of mining order value at strategy creation will receive mining rewards if they fall within the mining price range (highest buy price * 0.99 ~ lowest sell price * 1.01).',
+  wrap: 'wrap',
+  Wrap: 'Wrap',
+  websites_for_more_information: 'Websites for more information:',
+  official_site: 'Official Site',
+  wrap_site: 'Wrap/Unwrap Site',
+  tips_third_party_site:
+    'You are about to leave DeGate and enter a third-party site:',
+  wrap_unwrap: 'Wrap/Unwrap',
 };
 
 export default en;
